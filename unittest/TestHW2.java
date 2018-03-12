@@ -1,4 +1,4 @@
-package ecs160.visitor.visitorexample;
+package visitor.visitorexample;
 
 import static org.junit.Assert.*;
 
@@ -8,7 +8,7 @@ import org.junit.Test;
 import ecs160.visitor.astvisitors.SingletonCheckerVisitor;
 import ecs160.visitor.astvisitors.StateCheckerVisitor;
 
-public class TestHW2 {
+public class Test1 {
 	
 	public static SingletonCheckerVisitor q1Grader;
 	public static StateCheckerVisitor q2Grader;
@@ -34,8 +34,8 @@ public class TestHW2 {
 		 * that your code correctly handles incorrect variants, as our test cases
 		 * will also check these.
 		 */
-		q1Grader = SingletonCheckerVisitor.setUpGrader("../ECS160HW1Reference/src/hw1/DatabaseManager.java", "DatabaseManager"); 
-		q2Grader = StateCheckerVisitor.setUpGrader("../ECS160HW1Reference/src/hw1/LibraryBook.java", "LibraryBook", "../ECS160HW1Reference/src/hw1/LBState.java", "LBState");
+		q1Grader = SingletonCheckerVisitor.setUpGrader("../DatabaseManager.java", "DatabaseManager"); 
+		q2Grader = StateCheckerVisitor.setUpGrader("../LibraryBook.java", "LibraryBook", "../LBState.java", "LBState");
 		System.out.println(q1Grader);
 	}
 	
